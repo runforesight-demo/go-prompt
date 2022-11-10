@@ -16,6 +16,10 @@ type Buffer struct {
 	lastKeyStroke   Key
 }
 
+func foresightUncoverageBuffer() string {
+	return "Foresight uncoverage function in Buffer file!"
+}
+
 // Text returns string of the current line.
 func (b *Buffer) Text() string {
 	return b.workingLines[b.workingIndex]
