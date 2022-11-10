@@ -2,6 +2,10 @@ package strings
 
 import "unicode/utf8"
 
+func foresightUncoverageStrings() string {
+	return "Foresight uncoverage function in Bisect file!"
+}
+
 // IndexNotByte is similar with strings.IndexByte but showing the opposite behavior.
 func IndexNotByte(s string, c byte) int {
 	n := len(s)
