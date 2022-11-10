@@ -44,7 +44,7 @@ jobs:
         test_path: ./test-report.json
         coverage_format: golang
         coverage_path: |
-            coverage.out
+            coverage.o
   examples:
     name: Build examples
     runs-on: ubuntu-latest
