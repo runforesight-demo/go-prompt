@@ -21,11 +21,11 @@ lint: ## Run golangci-lint.
 
 .PHONY: test
 test:  ## Run tests with race condition checking.
-	@go test -race ./...
+	@go test -v -json -race ./... > ./test-report.json -coverprofile=coverage.o
 
 .PHONY: bench
 bench:  ## Run benchmarks.
-	@go test -bench=. -run=- -benchmem ./...
+	@go test -v -json -bench=. -run=- -benchmem ./... > ./test-report.json -coverprofile=coverage.o
 
 .PHONY: coverage
 cover:  ## Run the tests.
