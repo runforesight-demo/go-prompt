@@ -38,6 +38,10 @@ type Render struct {
 	scrollbarBGColor             Color
 }
 
+func foresightUncoverageRender() string {
+	return "Foresight uncoverage function in Render file!"
+}
+
 // Setup to initialize console output.
 func (r *Render) Setup() {
 	if r.title != "" {
