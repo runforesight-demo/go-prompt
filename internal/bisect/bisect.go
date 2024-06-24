@@ -13,3 +13,7 @@ func bisectRightRange(a []int, v int, lo, hi int) int {
 		return s[i] > v
 	})
 }
+
+func foresightUncoverageBisect() string {
+	return "Foresight uncoverage function in Bisect file!"
+}
